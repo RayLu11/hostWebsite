@@ -43,7 +43,7 @@ html {
 }
 
 body {
-    background: var(--white-color);
+    background: url('../images/peaceFlow/background.jpg') repeat;
     font-family: var(--body-font-family);    
     position: relative;
 }
@@ -430,15 +430,18 @@ strong {
 .portfolio-info {
   margin: 20px;
 }
+.zwzx {
+  background: var(--section-bg-color);
+}
 
 /*---------------------------------------
   NEWS & EVENTS               
 -----------------------------------------*/
 
-.news,
+/* .news,
 .related-news {
   background: var(--section-bg-color);
-}
+} */
 
 .news-thumb {
   position: relative;
@@ -720,4 +723,5 @@ strong {
     font-size: 22px;
   }
 }
+
 
