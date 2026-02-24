@@ -4,477 +4,471 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <title>Wenrui Li - Licensed Psychotherapist | Trauma, IFS & EMDR Therapy</title>
     <meta name="description"
-        content="Wenrui Li is a licensed psychotherapist specializing in trauma healing, IFS, EMDR, and somatic therapy. Offering online counseling in TX, WA, and CA for anxiety, depression, and cross-cultural challenges.">
-    <meta name="keywords"
-        content="Psychotherapist, Trauma Therapy, IFS, EMDR, Somatic Therapy, Chinese Counselor, Online Therapy, Wenrui Li, Anxiety, Depression, PTSD, Cross-cultural counseling">
-    <meta name="author" content="Wenrui Li">
-    <link rel="canonical" href="https://www.peaceflowcounseling.com/">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.peaceflowcounseling.com/">
-    <meta property="og:title" content="Wenrui Li - Licensed Psychotherapist | Trauma, EMDR & IFS Therapy">
-    <meta property="og:description"
         content="Compassionate, evidence-based therapy specializing in trauma healing, women’s inner power, and cross-cultural experiences. Licensed in TX, WA, and CA.">
-    <meta property="og:image" content="https://www.peaceflowcounseling.com/self-photo.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.peaceflowcounseling.com/">
-    <meta property="twitter:title" content="Wenrui Li - Licensed Psychotherapist | Trauma, EMDR & IFS Therapy">
-    <meta property="twitter:description"
-        content="Compassionate, evidence-based therapy specializing in trauma healing, women’s inner power, and cross-cultural experiences. Licensed in TX, WA, and CA.">
-    <meta property="twitter:image" content="https://www.peaceflowcounseling.com/self-photo.jpg">
-
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Physician",
-      "name": "Wenrui Li Psychotherapy",
-      "image": "https://www.peaceflowcounseling.com/self-photo.jpg",
-      "@id": "https://www.peaceflowcounseling.com",
-      "url": "https://www.peaceflowcounseling.com",
-      "telephone": "+1-253-518-3288",
-      "email": "info@peaceflowcounseling.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "US"
-      },
-      "description": "Licensed Psychotherapist specializing in trauma healing, IFS, EMDR, and somatic therapy.",
-      "medicalSpecialty": ["Psychiatry", "Psychotherapy"],
-      "availableService": [
-        {
-            "@type": "MedicalTherapy",
-            "name": "Internal Family Systems (IFS)"
-        },
-        {
-            "@type": "MedicalTherapy",
-            "name": "EMDR Therapy"
-        },
-        {
-            "@type": "MedicalTherapy",
-            "name": "Somatic Therapy"
-        }
-      ]
-    }
-    </script>
-
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1 data-en="Wenrui Li" data-zh="李文芮">Wenrui Li</h1>
-                    <p class="subtitle" data-en="Licensed Psychotherapist" data-zh="持证心理治疗师">Licensed Psychotherapist
-                    </p>
+
+    <div class="site-container">
+
+        <!-- Header -->
+        <header class="navbar">
+            <div class="logo">
+                <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 0C15.3137 0 18 2.68629 18 6C18 9.31371 15.3137 12 12 12C8.68629 12 6 9.31371 6 6C6 2.68629 8.68629 0 12 0Z"
+                        fill="#4B2C52" />
+                    <path
+                        d="M22 20C22 25.5228 17.5228 30 12 30C6.47715 30 2 25.5228 2 20C2 18.0673 2.548 16.2625 3.48835 14.7351H20.5116C21.452 16.2625 22 18.0673 22 20Z"
+                        fill="#4B2C52" />
+                    <path d="M4.5 13C4.5 13 8.5 7 12 7C15.5 7 19.5 13 19.5 13H4.5Z" fill="#4B2C52" />
+                </svg>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#home" data-en="Home" data-zh="首页">Home</a>
+                <a href="#about" data-en="About" data-zh="关于您的咨询师">About Your Therapist</a>
+                <a href="#services" data-en="Services" data-zh="心理咨询服务">Services</a>
+                <a href="#faq" data-en="FAQ" data-zh="常见问题">FAQ</a>
+            </nav>
+
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <button id="lang-en" class="lang-btn active">EN</button>
+                    <span class="lang-divider">|</span>
+                    <button id="lang-zh" class="lang-btn">中</button>
                 </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#home" class="nav-link active" data-en="Home" data-zh="首页">Home</a></li>
-                        <li><a href="#about" class="nav-link" data-en="About" data-zh="关于">About</a></li>
-                        <li><a href="#services" class="nav-link" data-en="Services" data-zh="服务">Services</a></li>
-                        <li><a href="#faq" class="nav-link" data-en="FAQ" data-zh="常见问题">FAQ</a></li>
-                        <li><a href="#contact" class="nav-link" data-en="Contact" data-zh="联系">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="language-toggle">
-                    <button class="lang-btn active" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="zh">中文</button>
+                <a href="#contact" class="btn btn-primary nav-btn" data-en="Book My Free Consultation"
+                    data-zh="预约免费问询">Book My Free Consultation</a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag" data-en="COUNSELLING" data-zh="身心疗愈">SPIRITUAL COUNSELLING</span>
+                <h1 data-en="Finally Find Peace Of Mind" data-zh="寻回内心的平静">Finally Find Peace Of Mind</h1>
+                <p data-en="Helping you navigate life's challenges with wisdom, compassion, and inner peace."
+                    data-zh="以智慧、慈悲与内在的平静，陪伴您走过人生的种种挑战。">Helping you navigate life's challenges with wisdom,
+                    compassion,
+                    and inner peace.</p>
+                <a href="#contact" class="btn btn-primary hero-btn" data-en="Book My Free Consultation"
+                    data-zh="预约免费问询">Book My Free
+                    Consultation</a>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-arch">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Woman meditating finding peace">
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <!-- Main Content -->
-    <main class="main">
-        <!-- Home Section -->
-        <section id="home" class="section active">
-            <div class="container">
-                <div class="hero">
-                    <div class="hero-image">
-                        <img src="self-photo.jpg" alt="Wenrui Li - Licensed Psychotherapist"
-                            data-en="Wenrui Li - Licensed Psychotherapist" data-zh="李文芮 - 持证心理治疗师"
-                            style="border-radius:8px;width:285px;height:auto;">
-                    </div>
-                    <div class="hero-content">
-                        <h2 class="hero-title" data-en="Welcome to a Safe Space for Healing" data-zh="欢迎来到安全的疗愈空间">
-                            Welcome to a Safe Space for Healing</h2>
-                        <p class="hero-description"
-                            data-en="I provide compassionate, evidence-based therapy to help you navigate life's challenges and find inner peace. Together, we'll work towards healing and personal growth in a supportive, non-judgmental environment."
-                            data-zh="我提供富有同理心、基于证据的治疗，帮助您应对生活中的挑战并找到内心的平静。我们将在一个支持性、无评判的环境中共同努力，实现疗愈和个人成长。">I provide
-                            compassionate, evidence-based therapy to help you navigate life's challenges and find inner
-                            peace. Together, we'll work towards healing and personal growth in a supportive,
-                            non-judgmental environment.</p>
-                        <div class="hero-stats">
-                            <div class="stat">
-                                <span class="stat-number">8+</span>
-                                <span class="stat-label" data-en="Years Experience" data-zh="工作经验">Years
-                                    Experience</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">6000+</span>
-                                <span class="stat-label" data-en="Clinical Hours" data-zh="工作时长">Clinical Hours</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">7+</span>
-                                <span class="stat-label" data-en="Specialties" data-zh="专业领域">Specialties</span>
-                            </div>
-                        </div>
-                        <div class="contact-cta">
-                            <a href="#contact" class="contact-btn" data-en="Contact Me" data-zh="联系我">Contact Me</a>
-                        </div>
-                    </div>
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="value-item">
+                <div class="value-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="7" r="3" fill="#4B2C52" />
+                        <path d="M12 13C8.68629 13 6 15.6863 6 19H18C18 15.6863 15.3137 13 12 13Z" fill="#4B2C52" />
+                    </svg>
                 </div>
+                <h3 data-en="EMOTIONAL REGULATION" data-zh="情绪调节">EMOTIONAL REGULATION</h3>
+                <p data-en="Release stress, anxiety, and past traumas" data-zh="释放压力、焦虑与过往创伤">Release stress, anxiety,
+                    and past traumas</p>
+            </div>
+
+            <div class="value-item">
+                <div class="value-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 19V12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12V19" stroke="#4B2C52"
+                            stroke-width="2" stroke-linecap="round" />
+                        <path d="M8 19V12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12V19" stroke="#4B2C52"
+                            stroke-width="2" stroke-linecap="round" />
+                        <circle cx="12" cy="18" r="1" fill="#4B2C52" />
+                    </svg>
+                </div>
+                <h3 data-en="CLARITY & PURPOSE" data-zh="明晰方向">CLARITY & PURPOSE</h3>
+                <p data-en="Gain insight into your life's direction" data-zh="深入洞察人生方向">Gain insight into your life's
+                    direction</p>
+            </div>
+
+            <div class="value-item">
+                <div class="value-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="4" fill="#4B2C52" />
+                        <path
+                            d="M19 12C19 14.2091 17.2091 16 15 16H9C6.79086 16 5 14.2091 5 12C5 9.79086 6.79086 8 9 8H15C17.2091 8 19 9.79086 19 12Z"
+                            fill="#4B2C52" fill-opacity="0.5" />
+                    </svg>
+                </div>
+                <h3 data-en="SPIRITUAL CONNECTION" data-zh="灵性连结">SPIRITUAL CONNECTION</h3>
+                <p data-en="Align with your values and higher self" data-zh="契合内在价值与高我">Align with your values and
+                    higher self</p>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 data-en="About Me" data-zh="关于我">About Me</h2>
+        <section class="about-section dark-bg" id="about">
+            <div class="about-image-container">
+                <div class="about-image-arch">
+                    <img src="aboutphoto.png" alt="Wenrui Li, Licensed Psychotherapist">
                 </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p data-en="I am licensed in TX, WA, and CA state for online counseling only. I am a psychotherapist specializing in trauma healing, women’s inner power, LGBTQ+ identity, and cross-cultural experiences. My approach is deep, intuitive, and humanistic. I believe real strength comes not from hardening yourself, but from reconnecting with your inner truth and restoring mind–body harmony."
-                            data-zh="很高兴在这里遇见。
+            </div>
 
-我是一名专注于创伤疗愈、女性内在力量、LGBTQ+群体，跨文化身份与深度心理成长的心理咨询师。我在德州，华州和加州都有独立执业的咨询师执照，可以跨州做线上咨询。">I am licensed in TX, WA, and CA state
-                            for online counseling only. I am a psychotherapist specializing in trauma healing, women’s
-                            inner power, LGBTQ+ identity, and cross-cultural experiences. My approach is deep,
-                            intuitive, and humanistic. I believe real strength comes not from hardening yourself, but
-                            from reconnecting with your inner truth and restoring mind–body harmony.</p>
+            <div class="about-content">
+                <span class="tag tag-light border-tag" data-en="ABOUT YOUR THERAPIST" data-zh="关于您的咨询师">ABOUT YOUR
+                    THERAPIST</span>
+                <h2 data-en="I'm Here To Serve You" data-zh="我在这里倾听您的心声">I'm Here To Serve You</h2>
+                <div class="about-text-content">
+                    <p data-en="&quot;Hi, I'm Wenrui Li, a psychotherapist helping you find peace, meaning, and deeper connection in life. Whether you're seeking healing, spiritual growth, or a renewed sense of purpose, I'm here to support you on your journey."
+                        data-zh="“您好，我是心理咨询师李文芮。我致力于帮助您在生活中找到平静、意义与更深的联结。我的专长是发展型创伤、家庭关系，亲密关系，LGBTQ+和BIPOC群体, 以及东亚背景下女性的困境。很多在东亚文化中长大的女性，在成长过程中被物化，被要求追求完美，压抑真实感受、不能提出自己的需求。我同样在这样的环境中生活，做了很多自我探索和成长，希望我的经验能对你有所启发。">
+                        "Hi,
+                        I'm Wenrui Li, a psychotherapist helping you find peace, meaning, and deeper connection in life.
+                        Whether you're seeking healing, personal growth, or a renewed sense of purpose, I'm here to
+                        support you on your journey. I am specialized in chronic trauma, family and relationship issues,
+                        LGBTQ+ and BIPOC communities, and the challenges faced by women in East Asian cultural contexts.
+                    </p>
+                    <p data-en="I am licensed in TX, WA, and CA state for online counseling only. I specialize in trauma healing, women’s inner power, LGBTQ+ identity, and cross-cultural experiences. My approach is deep, intuitive, and humanistic.&quot;"
+                        data-zh="我持有德州、华盛顿州及加州的执照（仅限线上咨询）。我的咨询风格深入、直觉倾向，充满人文关怀。”">I am
+                        licensed in TX, WA, and CA state for online counseling only. I specialize in trauma healing,
+                        women’s inner power, LGBTQ+ identity, and cross-cultural experiences. My approach is deep,
+                        intuitive, and humanistic."</p>
+                </div>
 
-                        <p data-en="I focus on developmental and relational trauma, especially for East Asian women who grew up suppressing their real needs. I offer a steady, non-judgmental space to rediscover your sensitivity, strength, and longing."
-                            data-zh="在美国多年执业的经验，让我逐渐形成了自己的风格：深度、人本、直觉敏锐。
-
-我特别关注发展型创伤、关系创伤，以及东亚背景下女性内在权威的建立。很多来访在成长过程中学会了压抑真实感受、关注别人的期待、习惯为他人负责，却忽略了自己。我愿意提供一个安静、稳定、不评判的空间，陪你重新认识自己，理解你所有的敏感、力量与渴望。">
-                            I focus on developmental and relational trauma, especially for East Asian women who grew up
-                            suppressing their real needs. I offer a steady, non-judgmental space to rediscover your
-                            sensitivity, strength, and longing.</p>
-
-                        <p data-en="I also support many Chinese professionals in major tech companies facing workplace bullying, office politics, managerial pressure, and visa-related anxiety—helping them regain stability, clarity, and dignity amid uncertainty.
-
-EMDR – A approach to reprocess traumatic memories without reliving in past memories; IFS (Internal Family Systems) – A non-pathologizing framework that helps you understand and harmonize different emotional parts within yourself; Somatic Therapy – A practice that uses body awareness to regulate emotions, release stored tension."
-                            data-zh="最近几年我一直在支持在大厂工作的华人来访，一起面对职场霸凌、办公室政治、上级压力和签证不稳定带来的生存焦虑。在高度竞争与不公平中，你的自我感和边界常被侵蚀。我会帮助你从创伤反应中稳定下来，重新看清自身的力量与价值，并在动荡中保护自己，保持尊严。
-
-我使用 IFS、EMDR、躯体化方式、以及灵性取向的整合方式，帮助来访处理那些无法只靠理智解决的痛苦：被忽略的需求、难以言说的创伤、长期的紧绷与不安、反复的关系困境、以及“我知道道理却依旧做不到”的内在矛盾。我相信每个人都有一个稳固而清晰的核心自我，而我们要做的，是帮它被看见、被释放、被重新信任。
-">I also support many Chinese professionals in major tech companies facing workplace bullying, office politics,
-                            managerial pressure, and visa-related anxiety—helping them regain stability, clarity, and
-                            dignity amid uncertainty.<br><br>
-                            EMDR – A approach to reprocess traumatic memories without reliving in past memories; IFS
-                            (Internal Family Systems) – A non-pathologizing framework that helps you understand and
-                            harmonize different emotional parts within yourself; Somatic Therapy – A practice that uses
-                            body awareness to regulate emotions, release stored tension.
-                        </p>
-
-                        <!-- New paragraph: Chinese version -->
-                        <p data-en="In my therapy room, one of the things I value most is witnessing someone reclaim their inner authority. Many of us were taught, from a very young age, to suppress, to endure, to accommodate. Over time, we lose trust in our own intuition, our emotions, and our judgment.
-
-                        “Inner strength” is not about becoming tougher—it’s about finally being able to hear your own voice, recognizing what feels true for you, and choosing to stand on your own side. When a person can sense that quiet, steady “I am here” within themselves—even in the middle of confusion, conflict, or pressure—that is the moment their authority begins to return to the body. And that kind of strength doesn’t need to convince others; it only needs to be acknowledged by yourself."
-                            data-zh="在我的咨询室里，我最珍视的一件事，是看见一个人重新拿回自己的内在权威。很多人从小被教得太会压抑、太会忍耐、太会迎合，久而久之，我们不再信任自己的直觉、感受和判断。所谓“内在力量”，不是变得强硬，而是你终于能听到自己的声音，知道什么对你来说是真实的，并且愿意站在自己这一边。当一个人能够在混乱、矛盾和压力之中，仍然感受到内心那股安静而稳定的“我在这里”，那就是权威开始回到身体的瞬间。那种力量不需要说服别人，它只需要被你自己承认。">
-                            In my therapy room, one of the things I value most is witnessing someone reclaim their inner
-                            authority. Many of us were taught, from a very young age, to suppress, to endure, to
-                            accommodate. Over time, we lose trust in our own intuition, our emotions, and our judgment.
-
-                            “Inner strength” is not about becoming tougher—it’s about finally being able to hear your
-                            own voice, recognizing what feels true for you, and choosing to stand on your own side. When
-                            a person can sense that quiet, steady “I am here” within themselves—even in the middle of
-                            confusion, conflict, or pressure—that is the moment their authority begins to return to the
-                            body. And that kind of strength doesn’t need to convince others; it only needs to be
-                            acknowledged by yourself.</p>
-
+                <div class="credentials">
+                    <div class="credential-item">
+                        <i class="fa-solid fa-ribbon"></i>
+                        <span data-en="Licensed in TX, WA, CA" data-zh="德州、华州、加州执照咨询师">Licensed in TX, WA, CA</span>
                     </div>
-                    <div class="credentials">
-                        <h3 data-en="Credentials & Training" data-zh="资质与培训">Credentials & Training</h3>
-                        <ul>
-                            <li data-en="Licensed in TX, WA, CA" data-zh="多州持证心理咨询师，TX，WA，CA">Licensed in TX, WA, CA
-                            </li>
-                            <li data-en="Master's in Mental health counseling" data-zh="心理咨询硕士">Master's in mental
-                                health counseling</li>
-                            <li data-en="Trained in Internal Family System (IFS)" data-zh="接受IFS长程培训">Trained in
-                                Internal Family System (IFS)</li>
-                            <li data-en="Trained in EMDR" data-zh="接受EMDR眼动脱敏多次培训">Trained in EMDR</li>
-                            <li data-en="Somatic Therapy" data-zh="躯体疗法">Somatic Therapy</li>
-                            <li data-en="trauma-focused,humanistic-informed, femenism-informed"
-                                data-zh="创伤聚焦、人本主义、女性主义取向">
-                                trauma-informed,humanistic-informed, femenism-informed</li>
-                        </ul>
+                    <div class="credential-item">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span data-en="Master's in mental health counseling" data-zh="心理健康咨询硕士">Master's in mental
+                            health counseling</span>
                     </div>
                 </div>
-                <div class="contact-cta">
-                    <a href="#contact" class="contact-btn" data-en="Contact Me" data-zh="联系我">Contact Me</a>
-                </div>
+
+                <a href="#contact" class="btn btn-primary" data-en="Book My Free Consultation" data-zh="预约免费问询">Book My
+                    Free Consultation</a>
             </div>
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 data-en="Services" data-zh="服务">Services</h2>
-                    <p class="section-subtitle"
-                        data-en="Evidence-based therapeutic approaches tailored to your unique needs"
-                        data-zh="基于证据的治疗方法，根据您的独特需求定制">Evidence-based therapeutic approaches tailored to your unique
-                        needs</p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🧠</div>
-                        <h3 data-en="Internal Family Systems (IFS)" data-zh="内部家庭系统（IFS）">Internal Family Systems (IFS)
-                        </h3>
-                        <p data-en="IFS therapy helps you understand and heal the different parts of yourself. This approach recognizes that we all have various internal parts that influence our thoughts, feelings, and behaviors."
-                            data-zh="IFS疗法帮助您理解并疗愈自己的不同部分。这种方法认识到我们都有各种影响我们思想、感受和行为的内在部分。">IFS therapy helps you
-                            understand and heal the different parts of yourself. This approach recognizes that we all
-                            have various internal parts that influence our thoughts, feelings, and behaviors.</p>
-                        <ul>
-                            <li data-en="Identify and understand internal conflicts" data-zh="识别和理解内部冲突">Identify and
-                                understand internal conflicts</li>
-                            <li data-en="Develop self-compassion and inner harmony" data-zh="培养自我同情和内心和谐">Develop
-                                self-compassion and inner harmony</li>
-                            <li data-en="Heal from past trauma and wounds" data-zh="疗愈过去的创伤和伤害">Heal from past trauma
-                                and wounds</li>
-                        </ul>
-                    </div>
+        <section class="services-section" id="services">
+            <div class="section-header">
+                <span class="tag border-tag" data-en="SERVICES" data-zh="心理咨询服务">SERVICES</span>
+                <h2 data-en="How I Can Serve You" data-zh="我能为您提供的帮助">How I Can Serve You</h2>
+                <p data-en="Evidence-based therapeutic approaches tailored to your unique needs. All services available in-person and online for maximum flexibility."
+                    data-zh="结合循证实践为您量身定制的治疗方案。提供灵活的线上或面询服务。">Evidence-based therapeutic approaches tailored to your
+                    unique needs. All services available in-person
+                    and online for maximum flexibility.</p>
+            </div>
 
-                    <div class="service-card">
-                        <div class="service-icon">👁️</div>
-                        <h3 data-en="EMDR Therapy" data-zh="EMDR疗法">EMDR Therapy</h3>
-                        <p data-en="Eye Movement Desensitization and Reprocessing (EMDR) is an evidence-based therapy that helps process and heal from traumatic memories and experiences."
-                            data-zh="眼动脱敏再处理（EMDR）是一种循证疗法，帮助处理和疗愈创伤性记忆和经历。">Eye Movement Desensitization and
-                            Reprocessing (EMDR) is an evidence-based therapy that helps process and heal from traumatic
-                            memories and experiences.</p>
-                        <ul>
-                            <li data-en="Process traumatic memories safely" data-zh="安全地处理创伤性记忆">Process traumatic
-                                memories safely</li>
-                            <li data-en="Reduce symptoms of PTSD and anxiety" data-zh="减轻PTSD和焦虑症状">Reduce symptoms of
-                                PTSD and anxiety</li>
-                            <li data-en="Develop healthier coping mechanisms" data-zh="培养更健康的应对机制">Develop healthier
-                                coping mechanisms</li>
-                        </ul>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-image-arch">
+                        <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Internal Family Systems">
                     </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">💆</div>
-                        <h3 data-en="Somatic Therapy" data-zh="躯体疗法">Somatic Therapy</h3>
-                        <p data-en="Somatic therapy focuses on the mind-body connection, helping you become aware of how emotions and trauma are stored in your body and how to release them."
-                            data-zh="躯体疗法专注于身心连接，帮助您意识到情绪和创伤如何储存在您的身体中以及如何释放它们。">Somatic therapy focuses on the
-                            mind-body connection, helping you become aware of how emotions and trauma are stored in your
-                            body and how to release them.</p>
-                        <ul>
-                            <li data-en="Release stored trauma and tension" data-zh="释放储存的创伤和紧张">Release stored trauma
-                                and tension</li>
-                            <li data-en="Improve mind-body awareness" data-zh="改善身心意识">Improve mind-body awareness</li>
-                            <li data-en="Develop grounding and regulation skills" data-zh="培养接地和调节技能">Develop grounding
-                                and regulation skills</li>
-                        </ul>
-                    </div>
+                    <h3 data-en="INTERNAL FAMILY SYSTEMS (IFS)" data-zh="内部家庭系统疗法 (IFS)">INTERNAL FAMILY SYSTEMS (IFS)
+                    </h3>
+                    <p data-en="Understand and heal internal conflicts, develop self-compassion, and inner harmony."
+                        data-zh="理解并疗愈内在冲突，转化内在小我，实现内心和谐。">Understand and heal internal conflicts, develop
+                        self-compassion, and inner harmony.</p>
                 </div>
-                <div class="contact-cta">
-                    <a href="#contact" class="contact-btn" data-en="Contact Me" data-zh="联系我">Contact Me</a>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-image-arch">
+                        <img src="EMDR.png" alt="EMDR Therapy">
+                    </div>
+                    <h3 data-en="EMDR THERAPY" data-zh="眼动脱敏与再加工疗法 (EMDR)">EMDR THERAPY</h3>
+                    <p data-en="Process traumatic memories safely, reduce symptoms of PTSD and anxiety."
+                        data-zh="安全处理创伤记忆，减轻创伤后应激障碍 (PTSD) 及焦虑症状。">Process traumatic memories safely, reduce symptoms of
+                        PTSD and anxiety.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-image-arch">
+                        <img src="https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Somatic Therapy">
+                    </div>
+                    <h3 data-en="SOMATIC THERAPY" data-zh="躯体体验疗法">SOMATIC THERAPY</h3>
+                    <p data-en="Release stored trauma, improve mind-body awareness, and develop grounding skills."
+                        data-zh="释放身体储存的创伤，提升身心觉察力，培养向下扎根的能力。">Release stored trauma, improve mind-body awareness, and
+                        develop grounding skills.</p>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Section -->
-        <section id="faq" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 data-en="Frequently Asked Questions" data-zh="常见问题">Frequently Asked Questions</h2>
-                </div>
-                <div class="faq-grid">
-                    <div class="faq-card">
-                        <h3 data-en="How to do initial contact?" data-zh="如何进行首次联系？">How to do inicial contact?</h3>
-                        <p data-en="You can reach out to me by email. I reply new client within 24 hours. Please include your state of residence and your insurance information (insurance cannot be used for California clients). After that, we can schedule a 15-minute consultation call where you can briefly share what you’re looking for, and I will also introduce myself further so we can see if we’re a good fit. "
-                            data-zh="您可以通过邮件与我联系,我会在24小时内回复新来访。请在邮件中告知您的所在州，以及您的保险信息（在加州目前无法接受保险）。之后我们可以安排一次约 15 分钟的电话问询，简单讨论您的需求，我也会进一步介绍我的方式和工作风格，以确认是否适合继续合作。">
-                            You can reach out to me by email. I reply new client within 24 hours. Please include your
-                            state of residence and your insurance information (insurance cannot be used for California
-                            clients). After that, we can schedule a 15-minute consultation call where you can briefly
-                            share what you’re looking for, and I will also introduce myself further so we can see if
-                            we’re a good fit.</p>
-                    </div>
+        <!-- How It Works / Process Section -->
+        <section class="process-section">
+            <div class="section-header">
+                <span class="tag border-tag" data-en="HOW IT WORKS" data-zh="咨询流程">HOW IT WORKS</span>
+                <h2 data-en="Just Three Easy Steps" data-zh="简单的三个步骤">Just Three Easy Steps</h2>
+                <p data-en="I keep the process simple, so we can focus on what matters."
+                    data-zh="我将流程保持简单，以便我们能专注于真正重要的事情。">I keep the process simple, so we can focus on what matters.</p>
+            </div>
 
-                    <div class="faq-card">
-                        <h3 data-en="What can I expect in the first session?" data-zh="第一次咨询我可以期待什么？">What can I expect
-                            in the first session?</h3>
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-number">1.</div>
+                    <h3 data-en="FREE CONSULTATION" data-zh="初步免费问询">FREE CONSULTATION</h3>
+                    <p data-en="We meet each other and I learn about your needs and goals."
+                        data-zh="我们初次交流，让我了解您的需求与目标。">We meet each other and I learn about your needs and goals.</p>
+                </div>
+
+                <div class="step-arrow">
+                    <svg width="80" height="30" viewBox="0 0 80 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 20 Q 20 20 30 10 T 70 15" stroke="#4B2C52" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M60 5 L 72 15 L 60 25" stroke="#4B2C52" stroke-width="2" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-number">2.</div>
+                    <h3 data-en="COUNSELLING PLAN" data-zh="制定咨询方案">COUNSELLING PLAN</h3>
+                    <p data-en="I provide a counselling plan tailored to your unique situation."
+                        data-zh="我将根据您的独特情况，提供量身定制的咨询方案。">I provide a counselling plan tailored to your unique
+                        situation.</p>
+                </div>
+
+                <div class="step-arrow">
+                    <svg width="80" height="30" viewBox="0 0 80 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 20 Q 20 20 30 10 T 70 15" stroke="#4B2C52" stroke-width="2" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M60 5 L 72 15 L 60 25" stroke="#4B2C52" stroke-width="2" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-number">3.</div>
+                    <h3 data-en="YOUR HEALING BEGINS" data-zh="开启疗愈之旅">YOUR HEALING BEGINS</h3>
+                    <p data-en="You receive support until you flourish without my help."
+                        data-zh="您将获得持续的支持，直到您能依靠自己的力量绽放。">You receive support until you flourish without my help.</p>
+                </div>
+            </div>
+
+            <div class="process-btn-container">
+                <a href="#contact" class="btn btn-primary" data-en="Book My Free Consultation" data-zh="预约免费问询">Book My
+                    Free Consultation</a>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq">
+            <div class="section-header">
+                <span class="tag border-tag" data-en="FAQ" data-zh="常见问题">FAQ</span>
+                <h2 data-en="Questions Answered" data-zh="解答您的疑惑">Questions Answered</h2>
+                <p data-en="If you don't see your question answered here, please get in touch."
+                    data-zh="如果您在这里没有找到答案，欢迎随时联系我。">If you don't see your question answered here, please get in touch.
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="What can I expect in the first session?" data-zh="第一次咨询会发生什么？">What can I expect in
+                            the first session?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
                         <p data-en="The first session is an opportunity for us to get to know each other. I'll ask about your background, current challenges, and goals for therapy. We'll discuss your needs and create a personalized treatment plan."
-                            data-zh="第1-3次咨询是我们相互了解的机会。我会询问您的背景、目前的困扰，共同制定咨询计划。我们可以进一步感受彼此是否合适，咨询关系是好的效果的关键因素。">
-                            The first session is an opportunity for us to get to know each other. I'll ask about your
+                            data-zh="第一次咨询是我们相互了解的契机。我会询问您的背景、目前的困扰以及对咨询的期望。我们将探讨您的需求，并共同制定个性化的咨询方案。">The first session
+                            is an opportunity for us to get to know each other. I'll ask about your
                             background, current challenges, and goals for therapy. We'll discuss your needs and create a
                             personalized treatment plan.</p>
                     </div>
+                </div>
 
-                    <div class="faq-card">
-                        <h3 data-en="How long does therapy typically take?" data-zh="治疗通常需要多长时间？">How long does therapy
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="How to do initial contact?" data-zh="如何进行首次联系？">How to do initial contact?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="You can reach out to me by email. I reply new client within 24 hours. Please include your state of residence and your insurance information (insurance cannot be used for California clients). After that, we can schedule a 15-minute consultation call where you can briefly share what you’re looking for."
+                            data-zh="您可以点击“预约免费问询”按钮，填写表格，请在邮件中说明您居住的州。我会在24小时内回复新来访。之后，我们可以安排一次15分钟的免费通话，您可以简要分享您的诉求。">
+                            You can reach out to me by email. I reply new client within 24 hours. Please include your
+                            state of residence and your insurance information (insurance cannot be used for California
+                            clients). After that, we can schedule a 15-minute consultation call where you can briefly
+                            share what you’re looking for.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="How long does therapy typically take?" data-zh="咨询通常需要多长时间？">How long does therapy
                             typically take?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
                         <p data-en="The duration varies depending on your goals and needs. Some clients see significant improvement in 8-12 sessions, while others benefit from longer-term therapy. We'll regularly assess progress and adjust accordingly."
-                            data-zh="持续时间因您的目标和需求而异。一般在8-12次咨询中能感觉到明显变化，也有很多人进行更长期的治疗。我们可以随时商量调整。如果您觉得我们没有进展，或者有不合适不舒服的地方，可以在咨询中或者邮件告知我。这些是很宝贵的反馈，可以让咨询更符合您的需要。">
-                            The duration varies depending on your goals and needs. Some clients see significant
+                            data-zh="咨询时长因您的个人目标和需求而异。有些客户在 8-12 次咨询后就能看到显著改善，而另一些客户则可能从更长期的治疗中获益。我们会定期评估进展并做出相应调整。">The
+                            duration varies depending on your goals and needs. Some clients see significant
                             improvement in 8-12 sessions, while others benefit from longer-term therapy. We'll regularly
                             assess progress and adjust accordingly.</p>
                     </div>
+                </div>
 
-                    <div class="faq-card">
-                        <h3 data-en="Do you accept insurance?" data-zh="您接受保险吗？">Do you accept insurance?</h3>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="Do you accept insurance?" data-zh="你们接受医疗保险吗？">Do you accept insurance?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
                         <p data-en="I am an out-of-network provider. I can provide you with a superbill that you can submit to your insurance company for potential reimbursement. Please check with your insurance provider about out-of-network benefits."
-                            data-zh="我在TX和WA可以接受部分保险，请在邮件中写明您的保险。在CA无法接受保险。如果是out of network，我可以为您提供superbill，您可以提交给保险公司以获得报销，报销额度因保险计划不同而有所不同，请向您的保险公司查询。">
+                            data-zh="我属于网络外（out-of-network）服务提供者。我可以为您提供可报销收据（superbill），您可以将其提交给保险公司以申请报销。请向您的保险提供商确认您的网外福利。">
                             I am an out-of-network provider. I can provide you with a superbill that you can submit to
                             your insurance company for potential reimbursement. Please check with your insurance
                             provider about out-of-network benefits.</p>
                     </div>
-
-                    <div class="faq-card">
-                        <h3 data-en="What are your fees?" data-zh="您的费用是多少？">What are your fees?</h3>
-                        <p data-en="Individual therapy sessions are $200 for 50 minutes. I offer a limited number of sliding scale spots for those with financial need. Please contact me to discuss payment options and availability."
-                            data-zh="在WA和CA，个人咨询50分钟$200，伴侣咨询第一次60分钟， 之后每次50分钟，价格是每次$220。在TX，个人咨询50分钟$135， 伴侣咨询每次$150。我为有经济需求的人提供有限数量的折扣，可以在电话或邮件里商量具体情况。">
-                            Individual therapy sessions are $200 for 50 minutes. I offer a limited number of sliding
-                            scale spots for those with financial need. Please contact me to discuss payment options and
-                            availability.</p>
-                    </div>
-
-                    <div class="faq-card">
-                        <h3 data-en="Is therapy confidential?" data-zh="治疗是保密的吗？">Is therapy confidential?</h3>
-                        <p data-en="Yes, therapy is confidential. There are a few exceptions, such as if you are at risk of harming yourself or others, or if there is suspected abuse of a minor. I'll discuss confidentiality in detail during our first session."
-                            data-zh="所有的治疗信息都是保密的。有一些例外情况，比如您有伤害自己或他人的风险，或者怀疑虐待未成年人，或是使用保险。我将在第一次咨询中详细讨论保密性。">
-                            Yes, therapy is confidential. There are a few exceptions, such as if you are at risk of
-                            harming yourself or others, or if there is suspected abuse of a minor. I'll discuss
-                            confidentiality in detail during our first session.</p>
-                    </div>
-
-                    <div class="faq-card">
-                        <h3 data-en="Do you offer online therapy?" data-zh="您提供在线治疗吗？">Do you offer online therapy?</h3>
-                        <p data-en="Yes, I offer both in-person and online therapy sessions. Online sessions are conducted through a secure, HIPAA-compliant platform. Many clients find online therapy just as effective as in-person sessions."
-                            data-zh="我目前只提供在线咨询。EMDR，IFS，和somatic therapy 线上的治疗效果和线下没有显著区别。">
-                            Yes, I offer both in-person and online therapy sessions. Online sessions are conducted
-                            through a secure, HIPAA-compliant platform. Many clients find online therapy just as
-                            effective as in-person sessions.</p>
-                    </div>
                 </div>
-                <div class="contact-cta">
-                    <a href="#contact" class="contact-btn" data-en="Contact Me" data-zh="联系我">Contact Me</a>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="Do you offer online therapy?" data-zh="提供线上咨询吗？">Do you offer online therapy?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="Yes, I offer online therapy sessions. Online sessions are conducted through a secure, HIPAA-compliant platform. Many clients find online therapy just as effective as in-person sessions. I am licensed in TX, WA, and CA state for online counseling only."
+                            data-zh="是的，我提供线上心理咨询服务。线上咨询通过安全且符合 HIPAA 标准的平台进行。许多客户发现线上咨询与面对面咨询同样有效。我持有德州、华州和加州的执照，仅在这些地区提供线上咨询。">
+                            Yes, I offer online therapy sessions. Online sessions are conducted through a secure,
+                            HIPAA-compliant platform. Many clients find online therapy just as effective as in-person
+                            sessions. I am licensed in TX, WA, and CA state for online counseling only.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 data-en="Contact Me" data-zh="联系我">Contact Me</h2>
-                    <p class="section-subtitle" data-en="Ready to begin your healing journey? I'm here to help."
-                        data-zh="准备好开始您的疗愈之旅了吗？我在这里帮助您。">Ready to begin your healing journey? I'm here to help.</p>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <h3 data-en="Get in Touch" data-zh="联系我">Get in Touch</h3>
-                            <p data-en="Email me and I reply new clients in 24 hours. Please inform me your living State, whether you want to use insurance, and what brings you to counseling. I offer a free 15-minute consultation to discuss your needs and answer any questions you may have about therapy."
-                                data-zh="我会在24小时内回复新来访。请告知您的所在州，是否需要保险，以及您的困扰。我提供免费的15分钟电话问询。">Email me and I reply new
-                                clients in 24 hours. Please inform me your living State, whether you want to use
-                                insurance, and what brings you to counseling. I offer a free 15-minute consultation to
-                                discuss your needs and answer any questions you may have about therapy.</p>
+        <section class="contact-section" id="contact">
+            <div class="section-header">
+                <span class="tag border-tag" data-en="GET IN TOUCH" data-zh="与我联系">GET IN TOUCH</span>
+                <h2 data-en="Reach Out Today" data-zh="准备好开始了吗？">Reach Out Today</h2>
+                <p data-en="Ready to start your journey? Fill out the form below or email me directly."
+                    data-zh="欢迎填写下方的表格，或直接通过邮件与我联系。">Ready to start your journey? Fill out the form below or email me
+                    directly.</p>
+            </div>
+
+            <div class="contact-container">
+                <form id="contactForm" action="https://formspree.io/f/mwpyezjn" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-en="Name <span class='required'>*</span>"
+                            data-zh="姓名 <span class='required'>*</span>">Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email" data-en="Email <span class='required'>*</span>"
+                                data-zh="电子邮箱 <span class='required'>*</span>">Email <span
+                                    class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
                         </div>
-
-                        <div class="contact-details">
-                            <div class="contact-detail">
-                                <span class="icon">📧</span>
-                                <div>
-                                    <strong data-en="Email" data-zh="邮箱">Email</strong>
-                                    <p type="email">
-                                        <a href="mailto:info@peaceflowcounseling.com">info@peaceflowcounseling.com</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="contact-detail">
-                                <span class="icon">📱</span>
-                                <div>
-                                    <strong data-en="Phone" data-zh="电话">Phone</strong>
-                                    <p>
-                                        <a href="tel:2535183288">(253)-518-3288</a>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="contact-detail">
-                                <span class="icon">📍</span>
-                                <div>
-                                    <strong data-en="Office" data-zh="办公室">Office</strong>
-                                    <p data-en="Online" data-zh="在线">Online</p>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="phone" data-en="Phone <span class='required'>*</span>"
+                                data-zh="电话 <span class='required'>*</span>">Phone <span
+                                    class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
                     </div>
 
-                    <div class="contact-form">
-                        <h3 data-en="Send a Message" data-zh="发送消息">Send a Message</h3>
-                        <form id="contactForm" action="https://formspree.io/f/mwpyezjn" method="POST">
-                            <div class="form-group">
-                                <label for="name" data-en="Name" data-zh="姓名">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email" data-en="Email" data-zh="邮箱">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="phone" data-en="Phone (Optional)" data-zh="电话（可选）">Phone (Optional)</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message" data-en="Message" data-zh="消息">Message</label>
-                                <textarea id="message" name="message" rows="5" required
-                                    placeholder="Please tell me about what brings you to therapy and any questions you may have..."></textarea>
-                            </div>
-
-                            <button type="submit" class="submit-btn" data-en="Send Message" data-zh="发送消息">Send
-                                Message</button>
-                        </form>
+                    <div class="form-group">
+                        <label for="message" data-en="Message <span class='required'>*</span>"
+                            data-zh="留言内容 <span class='required'>*</span>">Message <span
+                                class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Please tell me about what brings you to therapy and any questions you may have..."
+                            data-en-placeholder="Please tell me about what brings you to therapy and any questions you may have..."
+                            data-zh-placeholder="请简述您寻求心理咨询的原因，以及您可能有的任何问题……" required></textarea>
                     </div>
-                </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn" data-en="Send Message" data-zh="发送留言">Send
+                        Message</button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
             </div>
         </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
+        <!-- Footer -->
+        <footer class="site-footer">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3 data-en="Wenrui Li" data-zh="李文芮">Wenrui Li</h3>
-                    <p data-en="Licensed Psychotherapist" data-zh="持证心理治疗师">Licensed Psychotherapist</p>
+                <div class="footer-left">
+                    <div class="logo">
+                        <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 0C15.3137 0 18 2.68629 18 6C18 9.31371 15.3137 12 12 12C8.68629 12 6 9.31371 6 6C6 2.68629 8.68629 0 12 0Z"
+                                fill="#EAE3D9" />
+                            <path
+                                d="M22 20C22 25.5228 17.5228 30 12 30C6.47715 30 2 25.5228 2 20C2 18.0673 2.548 16.2625 3.48835 14.7351H20.5116C21.452 16.2625 22 18.0673 22 20Z"
+                                fill="#EAE3D9" />
+                            <path d="M4.5 13C4.5 13 8.5 7 12 7C15.5 7 19.5 13 19.5 13H4.5Z" fill="#EAE3D9" />
+                        </svg>
+                        <span
+                            style="color: #EAE3D9; font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-left: 10px;"
+                            data-en="Wenrui Li" data-zh="李文芮">Wenrui
+                            Li</span>
+                    </div>
+                    <p class="footer-desc"
+                        data-en="Licensed Psychotherapist specializing in trauma healing, women’s inner power, and cross-cultural experiences."
+                        data-zh="执照心理咨询师，专长于创伤疗愈、人际关系，女性内在力量及LGBTQ+社群。">Licensed Psychotherapist specializing in trauma
+                        healing,
+                        women’s inner power,
+                        and cross-cultural experiences.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="#" class="footer-nav-link" data-section="home" data-en="Home" data-zh="首页">Home</a>
-                    <a href="#" class="footer-nav-link" data-section="about" data-en="About" data-zh="关于">About</a>
-                    <a href="#" class="footer-nav-link" data-section="services" data-en="Services"
-                        data-zh="服务">Services</a>
-                    <a href="#" class="footer-nav-link" data-section="faq" data-en="FAQ" data-zh="常见问题">FAQ</a>
-                    <a href="#" class="footer-nav-link" data-section="contact" data-en="Contact"
-                        data-zh="联系">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p data-en="© 2024 Wenrui Li. All rights reserved." data-zh="© 2024 李文芮。保留所有权利。">© 2024 Wenrui Li. All
-                    rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
+                <div class="footer-links-container">
+                    <div class="footer-links">
+                        <h4 data-en="Navigation" data-zh="网站导航">Navigation</h4>
+                        <a href="#home" data-en="Home" data-zh="首页">Home</a>
+                        <a href="#about" data-en="About Your Therapist" data-zh="关于您的咨询师">About Your Therapist</a>
+                        <a href="#services" data-en="Services" data-zh="咨询服务">Services</a>
+                        <a href="#faq" data-en="FAQ" data-zh="常见问题">FAQ</a>
+                        <a href="#contact" data-en="Contact" data-zh="与我联系">Contact</a>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4 data-en="Contact Me" data-zh="联系方式">Contact Me</h4>
+                        <a href="mailto:info@peaceflowcounseling.com">info@peaceflowcounseling.com</a>
+                        <a href="tel:2535183288">(253)-518-3288</a>
+                        <p data-en="Online Sessions Available" data-zh="仅提供线上咨询">Online Sessions Available</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-en="&copy; 2024 Wenrui Li. All rights reserved." data-zh="&copy; 2024 李文芮. 保留所有权利。">&copy; 2024
+                    Wenrui Li. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="main.js?v=2"></script>
 </body>
 
 </html>
