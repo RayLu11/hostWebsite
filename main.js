@@ -137,4 +137,156 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Dynamic Location Detection and Map SEO Feature
+    async function initLocationSEO() {
+        const defaultLocation = {
+            state: 'CA',
+            city: 'Eastvale',
+            zip: '91752',
+            addressEn: 'Eastvale, CA 91752',
+            addressZh: '加州东谷市 (Eastvale, CA 91752)',
+            lat: 33.9636,
+            lng: -117.5642
+        };
+
+        const waLocation = {
+            state: 'WA',
+            city: 'Bellevue',
+            zip: '98006',
+            addressEn: 'Bellevue, WA 98006',
+            addressZh: '华盛顿州贝尔维尤 (Bellevue, WA 98006)',
+            lat: 47.5750,
+            lng: -122.1667
+        };
+
+        let detectedLocation = { ...defaultLocation };
+
+        try {
+            // Asynchronous helper to fetch with a timeout so it never hangs page load
+            const fetchWithTimeout = (url, timeout = 3000) => {
+                return Promise.race([
+                    fetch(url),
+                    new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), timeout))
+                ]);
+            };
+
+            let response = null;
+            let data = null;
+
+            try {
+                // Attempt 1: db-ip.com (highly reliable, free, supports HTTPS & localhost)
+                response = await fetchWithTimeout('https://api.db-ip.com/v2/free/self');
+                if (response && response.ok) {
+                    data = await response.json();
+                } else {
+                    throw new Error('db-ip.com failed');
+                }
+            } catch (err) {
+                try {
+                    // Fallback Attempt 2: freeipapi.com (reliable, free, supports HTTPS)
+                    response = await fetchWithTimeout('https://freeipapi.com/api/json');
+                    if (response && response.ok) {
+                        data = await response.json();
+                    } else {
+                        throw new Error('freeipapi.com failed');
+                    }
+                } catch (err2) {
+                    try {
+                        // Fallback Attempt 3: ipapi.co (HTTPS fallback, rate-limited)
+                        response = await fetchWithTimeout('https://ipapi.co/json/');
+                        if (response && response.ok) {
+                            data = await response.json();
+                        } else {
+                            throw new Error('ipapi.co failed');
+                        }
+                    } catch (err3) {
+                        console.warn('All geolocation services failed. Using default CA location.');
+                    }
+                }
+            }
+
+            if (data) {
+                // Normalize state code across various API payloads
+                const stateCode = (
+                    data.region_code || 
+                    data.region || 
+                    data.stateProvCode || 
+                    data.regionName || 
+                    ''
+                ).toUpperCase();
+
+                if (stateCode === 'WA' || stateCode === 'WASHINGTON') {
+                    detectedLocation = { ...waLocation };
+                }
+            }
+        } catch (e) {
+            console.warn('IP geolocation lookup failed. Defaulting to CA.', e);
+        }
+
+        // Apply to Footer Address UI with translation attributes
+        const footerAddressText = document.getElementById('footer-address-text');
+        if (footerAddressText) {
+            footerAddressText.setAttribute('data-en', detectedLocation.addressEn);
+            footerAddressText.setAttribute('data-zh', detectedLocation.addressZh);
+            
+            // Set initial state matching current language
+            const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+            footerAddressText.innerHTML = currentLang === 'zh' ? detectedLocation.addressZh : detectedLocation.addressEn;
+        }
+
+        // Update Google Maps Iframe Source ONLY if it's different from the default (CA)
+        // This prevents the browser from canceling the initial loading iframe request mid-flight
+        if (detectedLocation.state === 'WA') {
+            const footerMapIframe = document.getElementById('footer-map-iframe');
+            if (footerMapIframe) {
+                const query = `${detectedLocation.lat},${detectedLocation.lng}`;
+                footerMapIframe.src = `https://maps.google.com/maps?q=${query}&z=14&output=embed`;
+            }
+        }
+
+        // Update JSON-LD SEO Structured Data in Head
+        updateLocalBusinessSchema(detectedLocation);
+    }
+
+    function updateLocalBusinessSchema(loc) {
+        // Remove existing element if present
+        const existingSchema = document.getElementById('seo-local-business-schema');
+        if (existingSchema) {
+            existingSchema.remove();
+        }
+
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Wenrui Li - Licensed Psychotherapist",
+            "image": "https://peaceflowcounseling.com/aboutPhoto.png",
+            "telephone": "253-518-3288",
+            "email": "info@peaceflowcounseling.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": loc.city,
+                "addressRegion": loc.state,
+                "postalCode": loc.zip,
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": loc.lat,
+                "longitude": loc.lng
+            },
+            "url": "https://peaceflowcounseling.com",
+            "areaServed": ["CA", "TX", "WA"],
+            "description": "Licensed Psychotherapist specializing in trauma healing, IFS, and EMDR therapy online in TX, WA, and CA."
+        };
+
+        const script = document.createElement('script');
+        script.id = 'seo-local-business-schema';
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema, null, 2);
+        document.head.appendChild(script);
+    }
+
+    // Initialize dynamic location mapping
+    initLocationSEO();
 });
